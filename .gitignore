@@ -34,3 +34,5 @@ node_modules
 
 # 编译文件
 dist/
+
+.DS_Store
