@@ -20,13 +20,12 @@ export default {
     }
   },
   components: {
-    vHead  
+    vHead
   }
 }
 </script>
 <style lang="stylus" scoped>
 .content
-  float left
   padding-top 10px
   padding-bottom 10px
   margin-left 5%
