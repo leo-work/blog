@@ -60,6 +60,7 @@ export default {
           cancelButtonText: '取消',
           type: 'warning'
         })
+        // 进行数据删除操作
         this.$message({type: 'success', message: '删除成功!'})
       } catch (err) {
         this.$message({type: 'info', message: '已取消删除'})

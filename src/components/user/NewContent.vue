@@ -13,7 +13,7 @@
       <el-row class="newsBloger">
         <el-tag type="gray" style="font-size: 20px">作者: {{newsOne.username}}</el-tag>
       </el-row>
-    </el-row>   
+    </el-row>
   </el-row >
 </template>
 <script>
