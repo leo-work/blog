@@ -27,6 +27,9 @@ export default {
         username: 'leo'
       }
     }
+  },
+  mounted () {
+    console.log(this.$route.params)
   }
 }
 </script>

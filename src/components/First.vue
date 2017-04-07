@@ -54,7 +54,6 @@ export default {
   },
   methods: {
     selectNews (newsInfo) {
-      console.log(newsInfo)
       this.$router.push({name: 'NewContent', params: {id: newsInfo.id}})
     }
   }
