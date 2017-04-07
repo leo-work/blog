@@ -27,7 +27,8 @@ const router = new Router({
           component: MyNews
         },
         {
-          path: '/newsinfo',
+          path: '/newsinfo/:id',
+          name: 'NewContent',
           component: NewContent
         }
       ]

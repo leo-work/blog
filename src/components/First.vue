@@ -34,19 +34,28 @@ export default {
         {
           sendTime: '2015-12-17 18:36',
           title: '世界的边界在哪里？',
-          username: '大牛'
+          username: '大牛',
+          id: 1
         },
         {
           sendTime: '2015-12-17 18:36',
           title: '世界的边界在哪里？',
-          username: '大牛的弟弟'
+          username: '大牛的弟弟',
+          id: 2
         },
         {
           sendTime: '2015-12-17 18:36',
           title: '世界的边界在哪里？',
-          username: '大牛儿子'
+          username: '大牛儿子',
+          id: 3
         }
       ]
+    }
+  },
+  methods: {
+    selectNews (newsInfo) {
+      console.log(newsInfo)
+      this.$router.push({name: 'NewContent', params: {id: newsInfo.id}})
     }
   }
 }
