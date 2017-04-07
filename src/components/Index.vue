@@ -1,12 +1,16 @@
 <template>
   <el-row>
-    <p>234234234</p>
+    <v-head></v-head>
+    <div class="content">
+      <transition name="move" mode="out-in">
+        <router-view></router-view>
+      </transition>
+    </div>
   </el-row>
-
 </template>
 <script>
+import vHead from './common/Head'
 export default {
-  name: 'Index',
   data () {
     return {
       isLogin: false,
@@ -15,29 +19,16 @@ export default {
       activeIndex: 1
     }
   },
-  methods: {
-    handleSelect (key, keyPath) {
-      switch (key) {
-        case '1':
-          break
-        case '2':
-          break
-        case '3':
-          break
-        case '4':
-          this.dialogLogin = true
-          break
-        case '5':
-          this.dialogRegister = true
-          break
-        case '6':
-          break
-        default:
-          break
-      }
-    }
-  },
-  created: function () {
+  components: {
+    vHead  
   }
 }
 </script>
+<style lang="stylus" scoped>
+.content
+  float left
+  padding-top 10px
+  padding-bottom 10px
+  margin-left 5%
+  margin-right 5%
+</style>
