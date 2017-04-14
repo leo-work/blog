@@ -6,6 +6,8 @@ import MyNews from '@/components/user/MyNews'
 import NewContent from '@/components/user/NewContent'
 import First from '@/components/First'
 import NewsDone from '@/components/user/NewsDone'
+import MyVideo from '@/components/user/MyVideo'
+
 Vue.use(Router)
 const router = new Router({
   mode: 'history',
@@ -28,14 +30,16 @@ const router = new Router({
         },
         {
           path: '/newsinfo/:id',
-          name: 'NewContent',
           component: NewContent
+        },
+        {
+          path: '/user/myvideo',
+          component: MyVideo
         }
       ]
     },
     {
       path: '/newsinfo/:id',
-      name: 'NewContent',
       component: NewContent
     }
   ]

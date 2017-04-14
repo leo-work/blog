@@ -6,6 +6,7 @@
         <div class="userAuth" v-show="isLogin">
           <el-menu-item index="/user/mynews">我的文章</el-menu-item>
           <el-menu-item index="/user/sendnews">写稿</el-menu-item>
+          <el-menu-item index="/user/myvideo">我的视频</el-menu-item>
           <div class="user-info">
             <el-dropdown trigger="click" @command="handleCommand">
               <span class="el-dropdown-link">

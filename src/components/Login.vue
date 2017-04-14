@@ -440,6 +440,7 @@ export default {
   padding-top 20px
   padding-left 20px
   padding-right 20px
+  
   height 1000px
 .all
   width 75%

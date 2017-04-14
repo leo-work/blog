@@ -7,13 +7,12 @@ import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-default/index.css'
 import axios from 'axios'
 
-// Vue.prototype.$http = axios.create({
-//   baseURL: 'https://api.example.com'
-// })
+Vue.prototype.$http = axios.create({
+  baseURL: 'http://127.0.0.1:9001'
+})
 // axios.defaults.baseURL = 'https://api.example.com'
 // axios.defaults.headers.common['Authorization'] = AUTH_TOKEN
 // axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded'
-Vue.prototype.$http = axios
 Vue.config.productionTip = false
 Vue.use(ElementUI)
 /* eslint-disable no-new */
