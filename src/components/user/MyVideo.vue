@@ -13,6 +13,7 @@ export default {
   },
   methods: {
     async startLive (newsInfo) {
+      console.log('startLive')
       this.mediaSource = new MediaSource()
       let video = document.getElementById('my-video')
       video.src = URL.createObjectURL(this.mediaSource)
